@@ -58,7 +58,7 @@ angular.module('starter', ['ionic', 'login', 'sellbuy', 'sell', 'camerasplash', 
     // Routing for items on sale page
     .state('forsale', {
       url: "/forsale",
-      templateUrl: "modules/bid-list/bid-list.html"
+      templateUrl: "modules/items-selling/items-selling.html"
     })
 
     // routing for sell description page
