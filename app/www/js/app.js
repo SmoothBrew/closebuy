@@ -49,6 +49,18 @@ angular.module('starter', ['ionic', 'login', 'sellbuy', 'sell', 'camerasplash', 
       templateUrl: "modules/sellbuy-splash/sellbuy-splash.html"
     })
 
+    // Routing for bid-on page
+    .state('bidlist', {
+      url: "/bidlist",
+      templateUrl: "modules/bid-list/bid-list.html"
+    })
+
+    // Routing for items on sale page
+    .state('forsale', {
+      url: "/forsale",
+      templateUrl: "modules/bid-list/bid-list.html"
+    })
+
     // routing for sell description page
     .state('tab.sell', {
       url: "/sell",
