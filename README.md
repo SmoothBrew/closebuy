@@ -37,8 +37,8 @@ Closebuy, for selling and buying near you.
 From within the app directory:
 
 ```sh
-npm install q
-npm install shelljs
+npm install
+bower install
 cordova plugin add org.apache.cordova.camera
 ```
 
