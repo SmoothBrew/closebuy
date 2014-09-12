@@ -6,7 +6,7 @@
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
 
-angular.module('starter', ['ionic', 'login', 'sellbuy', 'sell', 'camerasplash', 'buybrowse', 'buyconfirm', 'buythankyou', 'settings', 'forSale', 'bidlist']) 
+angular.module('starter', ['ionic', 'login', 'sellbuy', 'sell', 'camerasplash', 'buybrowse', 'buyconfirm', 'buythankyou', 'settings', 'forSale', 'bidlist', 'itemMap', 'google-maps']) 
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -47,6 +47,12 @@ angular.module('starter', ['ionic', 'login', 'sellbuy', 'sell', 'camerasplash', 
     .state('sellbuy', {
       url: "/sellbuy-splash",
       templateUrl: "modules/sellbuy-splash/sellbuy-splash.html"
+    })
+
+    // Routing for item map
+    .state('itemMap', {
+      url: "/itemMap",
+      templateUrl: "modules/item-map/item-map.html"
     })
 
     // Routing for bid-on page
@@ -135,6 +141,7 @@ angular.module('starter', ['ionic', 'login', 'sellbuy', 'sell', 'camerasplash', 
           controller: 'SettingsController'
         }
       }
+
     });
 
     // If a user has a session token, direct them to the buy screen; else, direct them to login/signup

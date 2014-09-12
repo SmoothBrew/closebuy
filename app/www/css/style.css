@@ -6,6 +6,12 @@
 	Alternative Color #2 (Header Bar, H1): #c7fedd;
 */
 
+/*
+ ng google map containder
+*/
+
+.angular-google-map-container { min-height: 400px; }
+
 /* This is ionic's 'body', so set background color,
 text colors etc. here */
 .pane {
