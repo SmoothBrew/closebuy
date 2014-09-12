@@ -34,6 +34,10 @@ Closebuy, for selling and buying near you.
 
 ### Installing Dependencies
 
+Make sure you have ionic and cordova installed. To install:
+`npm install -g ionic`
+`npm install -g cordova`
+
 From within the app directory:
 
 ```sh
