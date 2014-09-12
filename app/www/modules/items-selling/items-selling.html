@@ -1,10 +1,10 @@
 <ion-view title="Your items for sale" ng-controller="ForSaleController">
-  <ion-content class="list">
+  <ion-content class="list" ng-repeat="thing in items">
   
-    <a class="item item-thumbnail-left" href="#">
-      <img src="#">
-      <h2>Your Item</h2>
-      <p>It's awesome!</p>
+    <a class="item item-thumbnail-left">
+      <img src="{{thing.imgURL}}">
+      <h3>Description: {{thing.description}}</h3>
+      <h2>Your Price: ${{thing.price}}</h2>
     </a>
 
   </ion-content>

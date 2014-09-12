@@ -8,7 +8,8 @@ angular.module('forSale', ['forSale.services'])
   var promise = ItemsForSale.getMyForSaleItems();
 
   promise.then(function(items) {
-  	console.log('items are: ', items);
+  	console.log(items);
+  	$scope.items = items;
   });
 
 });

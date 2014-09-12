@@ -18,7 +18,7 @@ angular.module('forSale.services', [])
 
 		query.find().then(function(results) {
 			results.forEach(function(result) {
-				items.push(result);
+				items.push(result.attributes);
 			});
 			deferred.resolve(items);
 		});
