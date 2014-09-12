@@ -2,7 +2,9 @@
   <ion-content class="has-header padding">
   <div class="buyContainer">
     <div class="item item-image" can-swipe="true">
+    <a ng-click="clickItem(); itemMap();">
       <img src="{{currentItem.imgURL}}" class="buyImg" on-swipe-left="onSwipeLeft()" on-swipe-right="onSwipeRight()">
+    </a>
     </div>
     <div class="itemInfo">
       <span>{{currentItem.description}}</span>

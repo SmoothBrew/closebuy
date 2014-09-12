@@ -27,6 +27,10 @@ angular.module('buybrowse', ['buybrowse.services'])
     }
   };
 
+  $scope.clickItem = function() {
+    BuyItems.clickedItem = $scope.currentItem;
+  };
+
   //when user swipes right, take them to the buy confirmation page
   $scope.onSwipeRight = function(){
     //mark this item as interested
@@ -44,4 +48,9 @@ angular.module('buybrowse', ['buybrowse.services'])
   $scope.buyItem = function(){
     $scope.onSwipeRight();
   };
+
+  // take user to map of item's location
+  $scope.itemMap = function() {
+    $state.go('itemMap');
+    }
 });

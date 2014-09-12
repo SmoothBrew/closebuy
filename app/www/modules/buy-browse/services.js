@@ -5,6 +5,13 @@ angular.module('buybrowse.services', [])
   //this variable stores the item's imageId that the user is interested in
   var interestedItemId = "";
 
+  var clickedItem = {location: {
+              _latitude: 0,
+              _longitude: 0
+
+          }
+        };
+
   //marks an item as skipped by pushing the imageId to the current user's skippedImages array
   var markItemAsSkipped = function(imageId){
     //if the currently logged-in user's skippedImages array doesn't already contain it, push the imageId to the array 
@@ -74,6 +81,7 @@ angular.module('buybrowse.services', [])
     return deferred.promise;
   }
   return {
+    clickedItem : clickedItem,
     interestedItemId : interestedItemId,
     getNewItems: getNewItems,
     markItemAsPurchased: markItemAsPurchased,
