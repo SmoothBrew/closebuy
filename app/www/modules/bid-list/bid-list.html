@@ -1,6 +1,11 @@
-<ion-view title="Bid List">
-  <ion-content class="has-header padding">
+<ion-view title="Bid List" ng-controller="BidListController">
+  <ion-content class="list" ng-repeat="item in items">
     <h1>Items Bid On</h1>
+    <a class="item item-thumbnail-left">
+      <img src="{{item.imgURL}}">
+      <h3>Description: {{item.description}}</h3>
+      <h2>Seller's Price: ${{item.price}}</h2>
+    </a>
 
   </ion-content>
 </ion-view>
