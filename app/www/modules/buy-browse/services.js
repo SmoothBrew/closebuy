@@ -33,6 +33,7 @@ angular.module('buybrowse.services', [])
     query.find().then(function(items){
       //set its purchased attribute to true
       items[0].set("purchased" , true);
+      items[0].set("buyerId", Parse.User.current().id);
       //save the record to Parse
       return items[0].save();
     }).then(function(item){
