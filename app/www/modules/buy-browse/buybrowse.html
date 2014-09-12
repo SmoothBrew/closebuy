@@ -2,9 +2,12 @@
   <ion-content class="has-header padding">
   <div class="buyContainer">
     <div class="item item-image" can-swipe="true">
+
       <ion-scroll class="imageScroll" direction="y" zooming="false">
-        <img src="{{currentItem.imgURL}}" class="buyImg" on-swipe-left="onSwipeLeft()" on-swipe-right="onSwipeRight()">
+        <img src="{{currentItem.imgURL}}" class="buyImg" on-swipe-left="onSwipeLeft()" on-swipe-right="onSwipeRight()" 
+        ng-click="clickItem(); itemMap();">
       </ion-scroll>
+
     </div>
     <div class="itemInfo">
       <span>{{currentItem.description}}</span>
