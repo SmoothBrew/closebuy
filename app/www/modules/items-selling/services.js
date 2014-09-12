@@ -18,6 +18,11 @@ angular.module('forSale.services', [])
 
 		query.find().then(function(results) {
 			results.forEach(function(result) {
+				if(result.attributes.purchased){
+					result.attributes['color'] = "item-balanced";
+				}else{
+					result.attributes['color'] = "item-calm";
+				}
 				items.push(result.attributes);
 			});
 			deferred.resolve(items);
