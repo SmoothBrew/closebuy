@@ -6,7 +6,7 @@
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
 
-angular.module('starter', ['ionic', 'login', 'sellbuy', 'sell', 'camerasplash', 'buybrowse', 'buyconfirm', 'buythankyou', 'settings', 'ui.router']) 
+angular.module('starter', ['ionic', 'login', 'sellbuy', 'sell', 'camerasplash', 'buybrowse', 'buyconfirm', 'buythankyou', 'settings', 'forSale']) 
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -58,7 +58,7 @@ angular.module('starter', ['ionic', 'login', 'sellbuy', 'sell', 'camerasplash', 
     // Routing for items on sale page
     .state('forsale', {
       url: "/forsale",
-      templateUrl: "modules/bid-list/bid-list.html"
+      templateUrl: "modules/items-selling/items-selling.html"
     })
 
     // routing for sell description page
